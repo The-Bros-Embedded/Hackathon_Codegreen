@@ -1,0 +1,41 @@
+2021-11-16 16:46:32,522 - [INFO]:  progress: 0%, start
+2021-11-16 16:46:32,523 - [INFO]:  progress: 1%, start train
+2021-11-16 16:46:32,523 - [INFO]:  no GPU, will use [CPU]
+2021-11-16 16:46:50,395 - [INFO]:  input_shape: (224, 224, 3)
+2021-11-16 16:46:53,960 - [INFO]:  load datasets complete, check pass, images num:2390, bboxes num:2929
+2021-11-16 16:47:04,228 - [INFO]:  train, labels:['fire', 'neutral', 'smoke']
+2021-11-16 16:47:04,230 - [DEBUG]:  train, datasets dir:datasets/forestfire
+2021-11-16 16:47:04,244 - [INFO]:  bboxes num: 2929, first bbox: [0.99553571 0.44196429]
+2021-11-16 16:47:05,154 - [INFO]:  bbox accuracy(IOU): 71.75%
+2021-11-16 16:47:05,155 - [INFO]:  bound boxes: (30.000000,30.00),(221.000000,218.00),(107.000000,130.00),(188.000000,82.00),(59.000000,65.00)
+2021-11-16 16:47:05,155 - [INFO]:  anchors: [0.9375, 0.9375, 6.90625, 6.8125, 3.34375, 4.0625, 5.875, 2.5625, 1.84375, 2.03125]
+2021-11-16 16:47:05,156 - [INFO]:  w/h ratios: [0.82, 0.91, 1.0, 1.01, 2.29]
+2021-11-16 16:47:13,060 - [INFO]:  train start
+2021-11-16 16:47:13,061 - [INFO]:  progress: 1.0%, train start
+2021-11-16 16:47:14,250 - [INFO]:  epoch 0 start
+2021-11-16 17:00:47,531 - [INFO]:  epoch 0 end: {'loss': 0.5371691584587097, 'val_loss': 0.588649570941925, 'lr': 1e-04}
+2021-11-16 17:00:47,533 - [INFO]:  progress: 20.4%, train epoch end
+2021-11-16 17:00:48,093 - [INFO]:  epoch 1 start
+2021-11-16 17:14:33,993 - [INFO]:  epoch 1 end: {'loss': 0.24720726907253265, 'val_loss': 0.6066967248916626, 'lr': 1e-04}
+2021-11-16 17:14:33,993 - [INFO]:  progress: 39.8%, train epoch end
+2021-11-16 17:14:34,027 - [INFO]:  epoch 2 start
+2021-11-16 17:28:53,195 - [INFO]:  epoch 2 end: {'loss': 0.1822071224451065, 'val_loss': 0.523971438407898, 'lr': 1e-04}
+2021-11-16 17:28:53,197 - [INFO]:  progress: 59.199999999999996%, train epoch end
+2021-11-16 17:28:53,851 - [INFO]:  epoch 3 start
+2021-11-16 17:43:03,470 - [INFO]:  epoch 3 end: {'loss': 0.1479939967393875, 'val_loss': 0.5136786103248596, 'lr': 1e-04}
+2021-11-16 17:43:03,471 - [INFO]:  progress: 78.6%, train epoch end
+2021-11-16 17:43:03,715 - [INFO]:  epoch 4 start
+2021-11-16 17:56:42,742 - [INFO]:  epoch 4 end: {'loss': 0.12065456807613373, 'val_loss': 0.5194383859634399, 'lr': 1e-04}
+2021-11-16 17:56:42,743 - [INFO]:  progress: 98.0%, train epoch end
+2021-11-16 17:56:42,792 - [INFO]:  train end
+2021-11-16 17:56:42,792 - [INFO]:  progress: 98.0%, train end
+2021-11-16 17:57:18,411 - [INFO]:  train ok, now generate report
+2021-11-16 17:57:18,412 - [INFO]:  generate report image
+2021-11-16 17:57:19,232 - [INFO]:  generate report image end
+2021-11-16 17:57:19,271 - [INFO]:  now generate kmodel
+2021-11-16 17:57:56,472 - [INFO]:  copy template files
+2021-11-16 17:57:56,581 - [INFO]:  pack result to zip file
+2021-11-16 17:57:56,750 - [INFO]:  progress: 99%, pack ok
+2021-11-16 17:57:56,751 - [INFO]:  progress: 100%, task complete
+2021-11-16 17:57:56,751 - [INFO]:  OK, task complete, result uri: C:\Users\Lenovo\Documents\Hackathon_Codegreen\maix_train-master\out\maixhub_detector_result_2021_11_16__17_57.zip
+2021-11-16 17:57:56,752 - [INFO]:  success: out_dir: C:\Users\Lenovo\Documents\Hackathon_Codegreen\maix_train-master\out\maixhub_detector_result_2021_11_16__17_57.zip
