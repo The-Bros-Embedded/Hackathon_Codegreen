@@ -1,56 +1,6 @@
-2021-11-19 21:21:49,043 - [INFO]:  progress: 0%, start
-2021-11-19 21:21:49,044 - [INFO]:  progress: 1%, start train
-2021-11-19 21:21:49,044 - [INFO]:  no GPU, will use [CPU]
-2021-11-19 21:21:52,117 - [INFO]:  input_shape: (224, 224, 3)
-2021-11-19 21:21:54,812 - [INFO]:  load datasets complete, check pass, images num:1630, bboxes num:2169
-2021-11-19 21:21:57,023 - [INFO]:  train, labels:['fire', 'smoke']
-2021-11-19 21:21:57,023 - [DEBUG]:  train, datasets dir:datasets/forestfire
-2021-11-19 21:21:57,026 - [INFO]:  bboxes num: 2169, first bbox: [0.99553571 0.44196429]
-2021-11-19 21:21:57,997 - [INFO]:  bbox accuracy(IOU): 64.32%
-2021-11-19 21:21:57,998 - [INFO]:  bound boxes: (191.000000,90.00),(57.000000,99.00),(33.000000,36.00),(140.000000,152.00),(97.000000,56.00)
-2021-11-19 21:21:57,999 - [INFO]:  anchors: [5.96875, 2.8125, 1.78125, 3.09375, 1.03125, 1.125, 4.375, 4.75, 3.03125, 1.75]
-2021-11-19 21:21:57,999 - [INFO]:  w/h ratios: [0.58, 0.92, 0.92, 1.73, 2.12]
-2021-11-19 21:21:59,056 - [INFO]:  train start
-2021-11-19 21:21:59,057 - [INFO]:  progress: 1.0%, train start
-2021-11-19 21:21:59,151 - [INFO]:  epoch 0 start
-2021-11-19 21:32:11,924 - [INFO]:  epoch 0 end: {'loss': 0.6329071521759033, 'val_loss': 0.8032350540161133, 'lr': 1e-04}
-2021-11-19 21:32:11,925 - [INFO]:  progress: 10.7%, train epoch end
-2021-11-19 21:32:12,061 - [INFO]:  epoch 1 start
-2021-11-19 21:43:04,602 - [INFO]:  epoch 1 end: {'loss': 0.2916719317436218, 'val_loss': 0.7410263419151306, 'lr': 1e-04}
-2021-11-19 21:43:04,603 - [INFO]:  progress: 20.4%, train epoch end
-2021-11-19 21:43:04,787 - [INFO]:  epoch 2 start
-2021-11-19 21:52:44,912 - [INFO]:  epoch 2 end: {'loss': 0.2128300815820694, 'val_loss': 0.7355490326881409, 'lr': 1e-04}
-2021-11-19 21:52:44,912 - [INFO]:  progress: 30.099999999999998%, train epoch end
-2021-11-19 21:52:45,059 - [INFO]:  epoch 3 start
-2021-11-19 22:02:17,181 - [INFO]:  epoch 3 end: {'loss': 0.18070420622825623, 'val_loss': 0.7326223254203796, 'lr': 1e-04}
-2021-11-19 22:02:17,182 - [INFO]:  progress: 39.8%, train epoch end
-2021-11-19 22:02:17,318 - [INFO]:  epoch 4 start
-2021-11-19 22:11:50,175 - [INFO]:  epoch 4 end: {'loss': 0.15156714618206024, 'val_loss': 0.7052136659622192, 'lr': 1e-04}
-2021-11-19 22:11:50,175 - [INFO]:  progress: 49.5%, train epoch end
-2021-11-19 22:11:50,316 - [INFO]:  epoch 5 start
-2021-11-19 22:21:19,830 - [INFO]:  epoch 5 end: {'loss': 0.12687158584594727, 'val_loss': 0.7094696760177612, 'lr': 1e-04}
-2021-11-19 22:21:19,830 - [INFO]:  progress: 59.199999999999996%, train epoch end
-2021-11-19 22:21:19,862 - [INFO]:  epoch 6 start
-2021-11-19 22:30:51,366 - [INFO]:  epoch 6 end: {'loss': 0.10752131044864655, 'val_loss': 0.7085508108139038, 'lr': 1e-04}
-2021-11-19 22:30:51,367 - [INFO]:  progress: 68.89999999999999%, train epoch end
-2021-11-19 22:30:51,396 - [INFO]:  epoch 7 start
-2021-11-19 22:40:22,805 - [INFO]:  epoch 7 end: {'loss': 0.0968884825706482, 'val_loss': 0.712165892124176, 'lr': 1e-04}
-2021-11-19 22:40:22,806 - [INFO]:  progress: 78.6%, train epoch end
-2021-11-19 22:40:22,843 - [INFO]:  epoch 8 start
-2021-11-19 22:50:01,767 - [INFO]:  epoch 8 end: {'loss': 0.08874551951885223, 'val_loss': 0.7221285104751587, 'lr': 1e-04}
-2021-11-19 22:50:01,767 - [INFO]:  progress: 88.3%, train epoch end
-2021-11-19 22:50:01,801 - [INFO]:  epoch 9 start
-2021-11-19 22:59:33,323 - [INFO]:  epoch 9 end: {'loss': 0.07954256981611252, 'val_loss': 0.7402145266532898, 'lr': 1e-04}
-2021-11-19 22:59:33,324 - [INFO]:  progress: 98.0%, train epoch end
-2021-11-19 22:59:33,335 - [INFO]:  train end
-2021-11-19 22:59:33,335 - [INFO]:  progress: 98.0%, train end
-2021-11-19 22:59:55,373 - [INFO]:  train ok, now generate report
-2021-11-19 22:59:55,373 - [INFO]:  generate report image
-2021-11-19 22:59:55,563 - [INFO]:  generate report image end
-2021-11-19 22:59:55,564 - [INFO]:  now generate kmodel
-2021-11-19 23:00:28,053 - [INFO]:  copy template files
-2021-11-19 23:00:28,073 - [INFO]:  pack result to zip file
-2021-11-19 23:00:28,194 - [INFO]:  progress: 99%, pack ok
-2021-11-19 23:00:28,195 - [INFO]:  progress: 100%, task complete
-2021-11-19 23:00:28,195 - [INFO]:  OK, task complete, result uri: C:\Users\dadan\Documents\Hackathon_Codegreen\maix_train-master\out\maixhub_detector_result_2021_11_19__23_00.zip
-2021-11-19 23:00:28,196 - [INFO]:  success: out_dir: C:\Users\dadan\Documents\Hackathon_Codegreen\maix_train-master\out\maixhub_detector_result_2021_11_19__23_00.zip
+2021-11-21 15:44:59,313 - [INFO]:  progress: 0%, start
+2021-11-21 15:44:59,313 - [INFO]:  progress: 1%, start train
+2021-11-21 15:44:59,314 - [INFO]:  no GPU, will use [CPU]
+2021-11-21 15:45:07,081 - [ERROR]:  datasets format error: not supported input size, supported: ((224, 224, 3), (240, 240, 3))
+2021-11-21 15:45:07,082 - [ERROR]:  train datasets not valid: datasets format error: not supported input size, supported: ((224, 224, 3), (240, 240, 3))
+2021-11-21 15:45:07,082 - [ERROR]:  failed: TrainFailReason.ERROR_PARAM, datasets not valid: datasets format error: not supported input size, supported: ((224, 224, 3), (240, 240, 3))

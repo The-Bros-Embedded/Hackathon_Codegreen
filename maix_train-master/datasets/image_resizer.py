@@ -1,13 +1,14 @@
 import cv2
 import os
 
-input_path_fire = 'C:/Users/Lenovo/Downloads/Dataset/Dataset/images/fire'
-input_path_neutral = 'C:/Users/Lenovo/Downloads/Dataset/Dataset/images/neutral'
-input_path_smoke = 'C:/Users/Lenovo/Downloads/Dataset/Dataset/images/smoke'
+# change path to get image
+input_path_fire = 'C:/Users/dadan/Downloads/fire-dataset/train/images'
+#input_path_neutral = 'C:/Users/Lenovo/Downloads/Dataset/Dataset/images/neutral'
+#input_path_smoke = 'C:/Users/Lenovo/Downloads/Dataset/Dataset/images/smoke'
 
-output_path_fire = 'E:/Hackster/Hackathon/maix_train-master/datasets/forestfire/images/fire/'
-output_path_neutral = 'E:/Hackster/Hackathon/maix_train-master/datasets/forestfire/images/neutral/'
-output_path_smoke = 'E:/Hackster/Hackathon/maix_train-master/datasets/forestfire/images/smoke/'
+output_path_fire = 'C:/Users/dadan/Documents/Hackathon_Codegreen/maix_train-master/datasets/fire/images/'
+#output_path_neutral = 'E:/Hackster/Hackathon/maix_train-master/datasets/forestfire/images/neutral/'
+#output_path_smoke = 'E:/Hackster/Hackathon/maix_train-master/datasets/forestfire/images/smoke/'
 
 _cnt = 0
 
@@ -16,11 +17,14 @@ for images in os.listdir(input_path_fire):
     print('Original Dimensions : ', img.shape)
     img = cv2.resize(img, (224, 224))
     print('Resized Dimensions : ', img.shape)
-    cv2.imwrite(output_path_fire+images, img)
+    _cnt = _cnt + 1
+    filename = "fire_" + str(_cnt) + ".jpg"
+    cv2.imwrite(output_path_fire+filename, img)
 
 cv2.imshow("Resized image", img)
 cv2.waitKey(0)
 
+'''
 for images in os.listdir(input_path_neutral):
     img = cv2.imread(os.path.join(input_path_neutral,images), cv2.IMREAD_UNCHANGED)
     print('Original Dimensions : ', img.shape)
@@ -61,3 +65,4 @@ for images in os.listdir(input_path_smoke):
 
 cv2.imshow("Resized image", img)
 cv2.waitKey(0)
+'''
