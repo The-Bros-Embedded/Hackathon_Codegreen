@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>fire_389.jpg</filename>
+	<path>C:\Users\Lenovo\Documents\Hackathon_Codegreen\Dataset\fire\images\fire_389.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>fire</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>158</xmin>
+			<ymin>113</ymin>
+			<xmax>173</xmax>
+			<ymax>139</ymax>
+		</bndbox>
+	</object>
+</annotation>
