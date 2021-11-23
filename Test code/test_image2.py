@@ -35,7 +35,7 @@ def main(anchors, labels = None, model_addr="/sd/m.kmodel", sensor_window=(224, 
     try:
         task = None
         task = kpu.load(model_addr)
-        kpu.init_yolo2(task, 0.5, 0.3, 5, anchors) # threshold:[0,1], nms_value: [0, 1]
+        kpu.init_yolo2(task, 0.2, 0.7, 5, anchors) # threshold:[0,1], nms_value: [0, 1]
         while 1:
             for fileimage in uos.listdir("/sd/images2"):
                 img = image.Image("/sd/images2/"+fileimage)
@@ -59,14 +59,15 @@ def main(anchors, labels = None, model_addr="/sd/m.kmodel", sensor_window=(224, 
         raise e
     finally:
         kpu.deinit(task)
+        #time.sleep(2)
 
 
 if __name__ == "__main__":
     try:
         labels = ['fire', 'smoke']
-        anchors = [1.65625, 2.3125, 0.28125, 0.46875, 0.59375, 1.03125, 2.46875, 1.25, 3.40625, 3.0625]
+        #anchors = [1.65625, 2.3125, 0.28125, 0.46875, 0.59375, 1.03125, 2.46875, 1.25, 3.40625, 3.0625]
         #anchors = [3.8125, 3.8125, 5.375, 5.375, 7.1875, 7.1875, 11.25, 11.3125, 9.125, 9.125]
-        #anchors = (1.889, 2.5245, 2.9465, 3.94056, 3.99987, 5.3658, 5.155437, 6.92275, 6.718375, 9.01025)
+        anchors = [1.889, 2.5245, 2.9465, 3.94056, 3.99987, 5.3658, 5.155437, 6.92275, 6.718375, 9.01025]
         main(anchors = anchors, labels=labels, model_addr="/sd/m.kmodel", lcd_rotation=2, sensor_window=(224, 224))
         # main(anchors = anchors, labels=labels, model_addr="/sd/m.kmodel")
     except Exception as e:
