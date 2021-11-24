@@ -1,7 +1,7 @@
 <annotation>
-	<folder>fire</folder>
+	<folder>images</folder>
 	<filename>fire_0135.jpg</filename>
-	<path>C:\Users\Lenovo\Pictures\forestfire\images\fire\fire_0135.jpg</path>
+	<path>C:\Users\Lenovo\Documents\Hackathon_Codegreen\Dataset\mix\images\fire_0135.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -19,8 +19,8 @@
 		<bndbox>
 			<xmin>53</xmin>
 			<ymin>59</ymin>
-			<xmax>81</xmax>
-			<ymax>105</ymax>
+			<xmax>100</xmax>
+			<ymax>124</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -67,8 +67,8 @@
 		<bndbox>
 			<xmin>118</xmin>
 			<ymin>33</ymin>
-			<xmax>133</xmax>
-			<ymax>58</ymax>
+			<xmax>144</xmax>
+			<ymax>62</ymax>
 		</bndbox>
 	</object>
 </annotation>

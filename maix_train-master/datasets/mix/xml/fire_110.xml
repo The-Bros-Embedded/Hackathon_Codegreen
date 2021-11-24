@@ -1,7 +1,7 @@
 <annotation>
 	<folder>images</folder>
 	<filename>fire_110.jpg</filename>
-	<path>C:\Users\dadan\Documents\Hackathon_Codegreen\Dataset\fire\images\fire_110.jpg</path>
+	<path>C:\Users\Lenovo\Documents\Hackathon_Codegreen\Dataset\mix\images\fire_110.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -19,8 +19,8 @@
 		<bndbox>
 			<xmin>99</xmin>
 			<ymin>1</ymin>
-			<xmax>131</xmax>
-			<ymax>45</ymax>
+			<xmax>224</xmax>
+			<ymax>49</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -29,10 +29,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>69</xmin>
-			<ymin>60</ymin>
-			<xmax>90</xmax>
-			<ymax>102</ymax>
+			<xmin>66</xmin>
+			<ymin>46</ymin>
+			<xmax>101</xmax>
+			<ymax>125</ymax>
 		</bndbox>
 	</object>
 </annotation>
