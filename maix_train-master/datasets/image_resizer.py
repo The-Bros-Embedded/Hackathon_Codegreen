@@ -2,15 +2,15 @@ import cv2
 import os
 
 # change path to get image
-input_path_fire = 'C:/Users/dadan/Downloads/fire-dataset/train/images'
+input_path_fire = 'C:/Users/Lenovo/Pictures/Fire2'
 #input_path_neutral = 'C:/Users/Lenovo/Downloads/Dataset/Dataset/images/neutral'
 #input_path_smoke = 'C:/Users/Lenovo/Downloads/Dataset/Dataset/images/smoke'
 
-output_path_fire = 'C:/Users/dadan/Documents/Hackathon_Codegreen/maix_train-master/datasets/fire/images/'
+output_path_fire = 'C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/fire2/images/'
 #output_path_neutral = 'E:/Hackster/Hackathon/maix_train-master/datasets/forestfire/images/neutral/'
 #output_path_smoke = 'E:/Hackster/Hackathon/maix_train-master/datasets/forestfire/images/smoke/'
 
-_cnt = 0
+_cnt = 1000
 
 for images in os.listdir(input_path_fire):
     img = cv2.imread(os.path.join(input_path_fire,images), cv2.IMREAD_UNCHANGED)
