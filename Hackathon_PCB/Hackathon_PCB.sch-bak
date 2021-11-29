@@ -1,0 +1,243 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3050 2425 850  700 
+U 618B832B
+F0 "ESP32C3-12F-Minsys" 50
+F1 "ESP32C3-12F-Minsys.sch" 50
+F2 "VIN" I L 3050 2700 50 
+F3 "VCC_EN" I L 3050 2850 50 
+F4 "RXD1" I R 3900 2725 50 
+F5 "TXD1" I R 3900 2850 50 
+$EndSheet
+$Sheet
+S 5525 4175 900  725 
+U 618D1854
+F0 "Sensors" 50
+F1 "Sensors.sch" 50
+F2 "GAS_AN" I L 5525 4375 50 
+F3 "DHT_DATA" I L 5525 4575 50 
+F4 "BAT_STAT" I R 6425 4375 50 
+$EndSheet
+$Sheet
+S 5500 2250 1050 1200
+U 61908BFC
+F0 "Modem" 50
+F1 "Modem.sch" 50
+F2 "VIN" I L 5500 2450 50 
+F3 "V_EN" I L 5500 2600 50 
+F4 "WAKE" I L 5500 2775 50 
+F5 "MODEM_RX" I R 6550 2550 50 
+F6 "MODEM_TX" I R 6550 2650 50 
+F7 "W_DIS" I L 5500 2950 50 
+F8 "PERST" I L 5500 3100 50 
+$EndSheet
+Wire Wire Line
+	3050 2700 2850 2700
+Wire Wire Line
+	2850 2700 2850 2600
+$Comp
+L power:+5V #PWR016
+U 1 1 61A50968
+P 2850 2600
+F 0 "#PWR016" H 2850 2450 50  0001 C CNN
+F 1 "+5V" H 2865 2773 50  0000 C CNN
+F 2 "" H 2850 2600 50  0001 C CNN
+F 3 "" H 2850 2600 50  0001 C CNN
+	1    2850 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2725 4025 2725
+Wire Wire Line
+	3900 2850 4025 2850
+Wire Wire Line
+	3050 2850 2900 2850
+Text Label 2900 2850 2    50   ~ 0
+ESP_EN
+Text Label 4025 2725 0    50   ~ 0
+ESP_RX
+Text Label 4025 2850 0    50   ~ 0
+ESP_TX
+Wire Wire Line
+	5500 2450 5275 2450
+Wire Wire Line
+	5275 2450 5275 2350
+$Comp
+L power:+5V #PWR017
+U 1 1 61A514C5
+P 5275 2350
+F 0 "#PWR017" H 5275 2200 50  0001 C CNN
+F 1 "+5V" H 5290 2523 50  0000 C CNN
+F 2 "" H 5275 2350 50  0001 C CNN
+F 3 "" H 5275 2350 50  0001 C CNN
+	1    5275 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2600 5350 2600
+Wire Wire Line
+	5500 2775 5350 2775
+Wire Wire Line
+	5500 2950 5350 2950
+Wire Wire Line
+	5500 3100 5350 3100
+Text Label 5350 2600 2    50   ~ 0
+M_EN
+Text Label 5350 2950 2    50   ~ 0
+M_DIS
+Text Label 4900 3450 0    50   ~ 0
+M_PERST
+Wire Wire Line
+	6550 2550 6725 2550
+Wire Wire Line
+	6550 2650 6725 2650
+Text Label 6725 2550 0    50   ~ 0
+M_RX
+Text Label 6725 2650 0    50   ~ 0
+M_TX
+Wire Wire Line
+	5525 4375 5350 4375
+Wire Wire Line
+	5525 4575 5350 4575
+Text Label 5350 4375 2    50   ~ 0
+GAS_DATA
+Text Label 5350 4575 2    50   ~ 0
+DHT_DATA
+$Comp
+L Connector_Generic:Conn_01x14 J1
+U 1 1 61A52CB4
+P 1175 3600
+F 0 "J1" H 1093 2675 50  0000 C CNN
+F 1 "Conn_01x14" H 1093 2766 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B14B-XH-A_1x14_P2.50mm_Vertical" H 1175 3600 50  0001 C CNN
+F 3 "~" H 1175 3600 50  0001 C CNN
+	1    1175 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1375 2900 1550 2900
+Wire Wire Line
+	1550 2900 1550 2825
+$Comp
+L power:+5V #PWR014
+U 1 1 61A54F91
+P 1550 2825
+F 0 "#PWR014" H 1550 2675 50  0001 C CNN
+F 1 "+5V" H 1565 2998 50  0000 C CNN
+F 2 "" H 1550 2825 50  0001 C CNN
+F 3 "" H 1550 2825 50  0001 C CNN
+	1    1550 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1375 4200 1625 4200
+Wire Wire Line
+	1625 4200 1625 4350
+$Comp
+L power:GND #PWR015
+U 1 1 61A55BCB
+P 1625 4350
+F 0 "#PWR015" H 1625 4100 50  0001 C CNN
+F 1 "GND" H 1630 4177 50  0000 C CNN
+F 2 "" H 1625 4350 50  0001 C CNN
+F 3 "" H 1625 4350 50  0001 C CNN
+	1    1625 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1375 3000 1550 3000
+Wire Wire Line
+	1375 3100 1550 3100
+Wire Wire Line
+	1375 3200 1550 3200
+Wire Wire Line
+	1375 3300 1550 3300
+Wire Wire Line
+	1375 3400 1550 3400
+Wire Wire Line
+	1375 3500 1550 3500
+Wire Wire Line
+	1375 3600 1550 3600
+Wire Wire Line
+	1375 3700 1550 3700
+Wire Wire Line
+	1375 3800 1550 3800
+Wire Wire Line
+	1375 3900 1550 3900
+Wire Wire Line
+	1375 4000 1550 4000
+Wire Wire Line
+	1375 4100 1625 4100
+Wire Wire Line
+	1625 4100 1625 4200
+Connection ~ 1625 4200
+Text Label 1550 3000 0    50   ~ 0
+ESP_EN
+Text Label 1550 3100 0    50   ~ 0
+ESP_RX
+Text Label 1550 3200 0    50   ~ 0
+ESP_TX
+Text Label 1550 3300 0    50   ~ 0
+M_EN
+Text Label 5350 2775 2    50   ~ 0
+M_WAKE
+Text Label 1550 3400 0    50   ~ 0
+M_WAKE
+Text Label 1550 3500 0    50   ~ 0
+M_DIS
+Text Label 1550 3600 0    50   ~ 0
+M_PERST
+Text Label 1550 3700 0    50   ~ 0
+M_RX
+Text Label 1550 3800 0    50   ~ 0
+M_TX
+Text Label 1550 3900 0    50   ~ 0
+GAS_DATA
+Text Label 1550 4000 0    50   ~ 0
+DHT_DATA
+Wire Wire Line
+	6425 4375 6600 4375
+$Comp
+L Jumper:Jumper_3_Bridged12 JP1
+U 1 1 6197F132
+P 4675 3750
+F 0 "JP1" V 4721 3817 50  0000 L CNN
+F 1 "Jumper_3_Bridged12" V 4630 3817 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm_NumberLabels" H 4675 3750 50  0001 C CNN
+F 3 "~" H 4675 3750 50  0001 C CNN
+	1    4675 3750
+	0    -1   -1   0   
+$EndComp
+Text Label 6600 4375 0    50   ~ 0
+BAT_STAT
+Text Label 4925 4075 0    50   ~ 0
+BAT_STAT
+Wire Wire Line
+	4925 3750 4825 3750
+Wire Wire Line
+	4675 3500 4675 3450
+Wire Wire Line
+	4675 3450 4900 3450
+Wire Wire Line
+	4675 4075 4675 4000
+Wire Wire Line
+	4675 4075 4925 4075
+Text Label 4925 3750 0    50   ~ 0
+PERST
+Text Label 5350 3100 2    50   ~ 0
+PERST
+$EndSCHEMATC

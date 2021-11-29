@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Custom_Footprints)(type KiCad)(uri C:/Users/dadan/Documents/Thebros/PCB/TheBros_Lib/Custom_Footprints.pretty)(options "")(descr ""))
+)

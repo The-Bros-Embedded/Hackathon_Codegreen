@@ -1,0 +1,497 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Polyfuse F1
+U 1 1 618D6DC0
+P 3775 4125
+F 0 "F1" V 3550 4125 50  0000 C CNN
+F 1 "Polyfuse" V 3641 4125 50  0000 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric" H 3825 3925 50  0001 L CNN
+F 3 "~" H 3775 4125 50  0001 C CNN
+	1    3775 4125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse F2
+U 1 1 618D746B
+P 3775 4950
+F 0 "F2" V 3550 4950 50  0000 C CNN
+F 1 "Polyfuse" V 3641 4950 50  0000 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric" H 3825 4750 50  0001 L CNN
+F 3 "~" H 3775 4950 50  0001 C CNN
+	1    3775 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Custom_Symbol:solar_charger U3
+U 1 1 618DB3A4
+P 4800 1550
+F 0 "U3" H 4812 1915 50  0000 C CNN
+F 1 "solar_charger" H 4812 1824 50  0000 C CNN
+F 2 "Custom_Footprints:Solar_Charger" H 4825 1200 50  0001 C CNN
+F 3 "" H 4800 1550 50  0001 C CNN
+	1    4800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 618DDD85
+P 2125 1500
+F 0 "J5" H 2043 1175 50  0000 C CNN
+F 1 "Conn_01x02" H 2043 1266 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2125 1500 50  0001 C CNN
+F 3 "~" H 2125 1500 50  0001 C CNN
+	1    2125 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J6
+U 1 1 618E28C9
+P 3825 1650
+F 0 "J6" H 3743 1225 50  0000 C CNN
+F 1 "Conn_01x04" H 3743 1316 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3825 1650 50  0001 C CNN
+F 3 "~" H 3825 1650 50  0001 C CNN
+	1    3825 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4025 1450 4400 1450
+Wire Wire Line
+	4025 1550 4275 1550
+Wire Wire Line
+	4275 1550 4275 1675
+Wire Wire Line
+	4275 1675 4400 1675
+Wire Wire Line
+	4025 1650 4200 1650
+Wire Wire Line
+	4200 1650 4200 1850
+Wire Wire Line
+	4200 1850 5275 1850
+Wire Wire Line
+	5275 1850 5275 1675
+Wire Wire Line
+	5275 1675 5225 1675
+Wire Wire Line
+	4025 1750 4125 1750
+Wire Wire Line
+	4125 1750 4125 1925
+Wire Wire Line
+	4125 1925 5375 1925
+Wire Wire Line
+	5375 1925 5375 1450
+Wire Wire Line
+	5375 1450 5225 1450
+$Comp
+L Custom_Symbol:Buck-boost-module U2
+U 1 1 618E7CBD
+P 3400 2725
+F 0 "U2" H 3412 3140 50  0000 C CNN
+F 1 "Buck-boost-module" H 3412 3049 50  0000 C CNN
+F 2 "Custom_Footprints:Buck-boost-module" H 3400 2725 50  0001 C CNN
+F 3 "" H 3400 2725 50  0001 C CNN
+	1    3400 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 618E944A
+P 1100 2775
+F 0 "J4" H 1018 2450 50  0000 C CNN
+F 1 "Conn_01x02" H 1018 2541 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 1100 2775 50  0001 C CNN
+F 3 "~" H 1100 2775 50  0001 C CNN
+	1    1100 2775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 2600 2775 2600
+Wire Wire Line
+	2775 2600 2775 2675
+Wire Wire Line
+	2775 2775 2775 2850
+Wire Wire Line
+	2775 2850 3000 2850
+Wire Wire Line
+	3825 2600 4050 2600
+Wire Wire Line
+	4050 2600 4050 2500
+Wire Wire Line
+	3825 2850 4050 2850
+$Comp
+L power:GND #PWR010
+U 1 1 618EC96B
+P 4050 3125
+F 0 "#PWR010" H 4050 2875 50  0001 C CNN
+F 1 "GND" H 4055 2952 50  0000 C CNN
+F 2 "" H 4050 3125 50  0001 C CNN
+F 3 "" H 4050 3125 50  0001 C CNN
+	1    4050 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 618ED4E9
+P 5175 2450
+F 0 "#PWR013" H 5175 2300 50  0001 C CNN
+F 1 "+5V" H 5190 2623 50  0000 C CNN
+F 2 "" H 5175 2450 50  0001 C CNN
+F 3 "" H 5175 2450 50  0001 C CNN
+	1    5175 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 618EE795
+P 5025 2750
+F 0 "C13" H 5140 2796 50  0000 L CNN
+F 1 "1uF" H 5140 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5063 2600 50  0001 C CNN
+F 3 "~" H 5025 2750 50  0001 C CNN
+	1    5025 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 618EEA2A
+P 5250 2750
+F 0 "C14" H 5365 2796 50  0000 L CNN
+F 1 "100nf" H 5365 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5288 2600 50  0001 C CNN
+F 3 "~" H 5250 2750 50  0001 C CNN
+	1    5250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5175 2500 5175 2450
+Wire Wire Line
+	5250 2600 5250 2500
+Wire Wire Line
+	5250 2500 5175 2500
+Connection ~ 5175 2500
+Wire Wire Line
+	5025 2600 5025 2500
+Connection ~ 5025 2500
+Wire Wire Line
+	5025 2500 5175 2500
+Wire Wire Line
+	4800 2600 4800 2500
+Connection ~ 4800 2500
+Wire Wire Line
+	4800 2500 5025 2500
+Wire Wire Line
+	5250 2975 5250 2900
+Wire Wire Line
+	4800 2900 4800 2975
+Connection ~ 4800 2975
+Wire Wire Line
+	4800 2975 5025 2975
+Wire Wire Line
+	5025 2900 5025 2975
+Connection ~ 5025 2975
+Wire Wire Line
+	5025 2975 5250 2975
+$Comp
+L power:+5V #PWR08
+U 1 1 618F68DB
+P 3050 4000
+F 0 "#PWR08" H 3050 3850 50  0001 C CNN
+F 1 "+5V" H 3065 4173 50  0000 C CNN
+F 2 "" H 3050 4000 50  0001 C CNN
+F 3 "" H 3050 4000 50  0001 C CNN
+	1    3050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4125 3050 4000
+Wire Wire Line
+	3050 4125 3625 4125
+$Comp
+L Device:C C10
+U 1 1 618F9B65
+P 3050 4325
+F 0 "C10" H 3165 4371 50  0000 L CNN
+F 1 "100nf" H 3165 4280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3088 4175 50  0001 C CNN
+F 3 "~" H 3050 4325 50  0001 C CNN
+	1    3050 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 618FA35E
+P 3075 4850
+F 0 "#PWR09" H 3075 4700 50  0001 C CNN
+F 1 "+5V" H 3090 5023 50  0000 C CNN
+F 2 "" H 3075 4850 50  0001 C CNN
+F 3 "" H 3075 4850 50  0001 C CNN
+	1    3075 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 618FA9C3
+P 3075 5150
+F 0 "C11" H 3190 5196 50  0000 L CNN
+F 1 "100nf" H 3190 5105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3113 5000 50  0001 C CNN
+F 3 "~" H 3075 5150 50  0001 C CNN
+	1    3075 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 4950 3075 4850
+Wire Wire Line
+	3075 4950 3625 4950
+Wire Wire Line
+	3075 4950 3075 5000
+Connection ~ 3075 4950
+$Comp
+L power:GND #PWR011
+U 1 1 618FD54B
+P 4075 5425
+F 0 "#PWR011" H 4075 5175 50  0001 C CNN
+F 1 "GND" H 4080 5252 50  0000 C CNN
+F 2 "" H 4075 5425 50  0001 C CNN
+F 3 "" H 4075 5425 50  0001 C CNN
+	1    4075 5425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 618FDC8A
+P 4150 4600
+F 0 "#PWR012" H 4150 4350 50  0001 C CNN
+F 1 "GND" H 4155 4427 50  0000 C CNN
+F 2 "" H 4150 4600 50  0001 C CNN
+F 3 "" H 4150 4600 50  0001 C CNN
+	1    4150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4175 3050 4125
+Connection ~ 3050 4125
+Wire Wire Line
+	3050 4475 3050 4525
+Wire Wire Line
+	3050 4525 4150 4525
+Connection ~ 4150 4525
+Wire Wire Line
+	4150 4525 4150 4600
+Wire Wire Line
+	3075 5300 3075 5375
+Wire Wire Line
+	3075 5375 4075 5375
+Wire Wire Line
+	4075 5425 4075 5375
+Connection ~ 4075 5375
+Text HLabel 4025 4225 0    50   Input ~ 0
+GAS_AN
+Text HLabel 3675 5050 0    50   Input ~ 0
+DHT_DATA
+$Comp
+L Device:Polyfuse F3
+U 1 1 6190B589
+P 4275 2500
+F 0 "F3" V 4050 2500 50  0000 C CNN
+F 1 "Polyfuse" V 4141 2500 50  0000 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric" H 4325 2300 50  0001 L CNN
+F 3 "~" H 4275 2500 50  0001 C CNN
+	1    4275 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4425 2500 4800 2500
+Wire Wire Line
+	4125 2500 4050 2500
+Wire Wire Line
+	4050 2975 4800 2975
+Wire Wire Line
+	4050 2850 4050 2975
+Connection ~ 4050 2975
+Wire Wire Line
+	4050 2975 4050 3125
+$Comp
+L Device:CP C12
+U 1 1 61919006
+P 4800 2750
+F 0 "C12" H 4918 2796 50  0000 L CNN
+F 1 "10uF" H 4918 2705 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 4838 2600 50  0001 C CNN
+F 3 "~" H 4800 2750 50  0001 C CNN
+	1    4800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 1150 2525 1150
+Wire Wire Line
+	2525 1750 2675 1750
+Wire Wire Line
+	2675 1450 2525 1450
+Wire Wire Line
+	2525 1150 2525 1400
+Connection ~ 2525 1450
+Wire Wire Line
+	2525 1450 2525 1750
+Wire Wire Line
+	2325 1400 2525 1400
+Connection ~ 2525 1400
+Wire Wire Line
+	2525 1400 2525 1450
+Wire Wire Line
+	2325 1500 2400 1500
+Wire Wire Line
+	2400 1500 2400 1950
+Wire Wire Line
+	2400 1950 3425 1950
+Wire Wire Line
+	3425 1950 3425 1750
+Wire Wire Line
+	3425 1150 3275 1150
+Wire Wire Line
+	3275 1450 3425 1450
+Connection ~ 3425 1450
+Wire Wire Line
+	3425 1450 3425 1150
+Wire Wire Line
+	3275 1750 3425 1750
+Connection ~ 3425 1750
+Wire Wire Line
+	3425 1750 3425 1450
+$Comp
+L Custom_Symbol:Holder-18650-3 BT1
+U 1 1 61946238
+P 2975 1450
+F 0 "BT1" H 2975 2017 50  0000 C CNN
+F 1 "Holder-18650-3" H 2975 1926 50  0000 C CNN
+F 2 "Custom_Footprints:BAT18650_Holder" H 2975 1450 50  0001 L BNN
+F 3 "" H 2975 1450 50  0001 L BNN
+F 4 "MPD" H 2975 1450 50  0001 L BNN "MANUFACTURER"
+F 5 "Manufacturer Recommendations" H 2975 1450 50  0001 L BNN "STANDARD"
+F 6 "N" H 2975 1450 50  0001 L BNN "PARTREV"
+F 7 "21.54 mm" H 2975 1450 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+	1    2975 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 6194D08E
+P 4500 4225
+F 0 "J7" H 4580 4267 50  0000 L CNN
+F 1 "Conn_01x03" H 4580 4176 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 4500 4225 50  0001 C CNN
+F 3 "~" H 4500 4225 50  0001 C CNN
+	1    4500 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J8
+U 1 1 6194D8BC
+P 4500 5050
+F 0 "J8" H 4580 5092 50  0000 L CNN
+F 1 "Conn_01x03" H 4580 5001 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 4500 5050 50  0001 C CNN
+F 3 "~" H 4500 5050 50  0001 C CNN
+	1    4500 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5150 4075 5150
+Wire Wire Line
+	4075 5150 4075 5375
+Wire Wire Line
+	3675 5050 4300 5050
+Wire Wire Line
+	3925 4950 4300 4950
+Wire Wire Line
+	4300 4325 4150 4325
+Wire Wire Line
+	4150 4325 4150 4525
+Wire Wire Line
+	4025 4225 4300 4225
+Wire Wire Line
+	3925 4125 4300 4125
+$Comp
+L Custom_Symbol:SW_DPDT S3
+U 1 1 61AA87C1
+P 2000 2475
+F 0 "S3" V 1533 2475 50  0000 C CNN
+F 1 "SW_DPDT" V 1624 2475 50  0000 C CNN
+F 2 "Custom_Footprints:SW_DPDT" H 2000 2475 50  0001 L BNN
+F 3 "" H 2000 2475 50  0001 L BNN
+F 4 "C&K" H 2000 2475 50  0001 L BNN "MANUFACTURER"
+	1    2000 2475
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 2675 2775 2675
+Wire Wire Line
+	2500 2675 1500 2675
+Connection ~ 2500 2675
+Wire Wire Line
+	2500 2475 1500 2475
+Wire Wire Line
+	1500 2475 1400 2475
+Wire Wire Line
+	1400 2475 1400 2675
+Wire Wire Line
+	1400 2675 1300 2675
+Connection ~ 1500 2475
+Wire Wire Line
+	1300 2775 2775 2775
+$Comp
+L Device:R R20
+U 1 1 61967913
+P 2800 775
+F 0 "R20" V 3007 775 50  0000 C CNN
+F 1 "R" V 2916 775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2730 775 50  0001 C CNN
+F 3 "~" H 2800 775 50  0001 C CNN
+	1    2800 775 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 6196C27F
+P 3175 775
+F 0 "R21" V 3382 775 50  0000 C CNN
+F 1 "R" V 3291 775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3105 775 50  0001 C CNN
+F 3 "~" H 3175 775 50  0001 C CNN
+	1    3175 775 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2525 1150 2525 775 
+Wire Wire Line
+	2525 775  2650 775 
+Connection ~ 2525 1150
+Wire Wire Line
+	2950 775  2975 775 
+Wire Wire Line
+	3325 775  3425 775 
+Wire Wire Line
+	3425 775  3425 1150
+Connection ~ 3425 1150
+Wire Wire Line
+	2975 775  2975 650 
+Connection ~ 2975 775 
+Wire Wire Line
+	2975 775  3025 775 
+Text HLabel 2975 650  1    50   Input ~ 0
+BAT_STAT
+$EndSCHEMATC
