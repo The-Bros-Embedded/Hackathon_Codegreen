@@ -1,139 +1,160 @@
-2021-11-24 12:59:44,744 - [INFO]:  progress: 0%, start
-2021-11-24 12:59:44,745 - [INFO]:  progress: 1%, start train
-2021-11-24 12:59:44,745 - [INFO]:  no GPU, will use [CPU]
-2021-11-24 13:00:14,012 - [INFO]:  input_shape: (224, 224, 3)
-2021-11-24 13:00:15,520 - [WARNING]:  decode xml datasets/mix\xml\smoke_109.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,530 - [WARNING]:  decode xml datasets/mix\xml\smoke_119.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_119.jpg
-2021-11-24 13:00:15,610 - [WARNING]:  decode xml datasets/mix\xml\smoke_191.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,660 - [WARNING]:  decode xml datasets/mix\xml\smoke_202.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,689 - [WARNING]:  decode xml datasets/mix\xml\smoke_228.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_228.jpg
-2021-11-24 13:00:15,693 - [WARNING]:  decode xml datasets/mix\xml\smoke_231.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,697 - [WARNING]:  decode xml datasets/mix\xml\smoke_235.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_235.jpg
-2021-11-24 13:00:15,723 - [WARNING]:  decode xml datasets/mix\xml\smoke_258.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,729 - [WARNING]:  decode xml datasets/mix\xml\smoke_263.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,747 - [WARNING]:  decode xml datasets/mix\xml\smoke_278.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,752 - [WARNING]:  decode xml datasets/mix\xml\smoke_283.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,806 - [WARNING]:  decode xml datasets/mix\xml\smoke_333.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,833 - [WARNING]:  decode xml datasets/mix\xml\smoke_354.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,868 - [WARNING]:  decode xml datasets/mix\xml\smoke_387.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,877 - [WARNING]:  decode xml datasets/mix\xml\smoke_394.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_394.jpg
-2021-11-24 13:00:15,893 - [WARNING]:  decode xml datasets/mix\xml\smoke_404.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,925 - [WARNING]:  decode xml datasets/mix\xml\smoke_433.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,975 - [WARNING]:  decode xml datasets/mix\xml\smoke_481.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:15,989 - [WARNING]:  decode xml datasets/mix\xml\smoke_495.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,003 - [WARNING]:  decode xml datasets/mix\xml\smoke_507.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,021 - [WARNING]:  decode xml datasets/mix\xml\smoke_523.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_523.jpg
-2021-11-24 13:00:16,031 - [WARNING]:  decode xml datasets/mix\xml\smoke_532.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,055 - [WARNING]:  decode xml datasets/mix\xml\smoke_554.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,105 - [WARNING]:  decode xml datasets/mix\xml\smoke_594.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,141 - [WARNING]:  decode xml datasets/mix\xml\smoke_623.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,173 - [WARNING]:  decode xml datasets/mix\xml\smoke_650.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,201 - [WARNING]:  decode xml datasets/mix\xml\smoke_672.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,206 - [WARNING]:  decode xml datasets/mix\xml\smoke_676.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_676.jpg
-2021-11-24 13:00:16,244 - [WARNING]:  decode xml datasets/mix\xml\smoke_7.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_7.jpg
-2021-11-24 13:00:16,319 - [WARNING]:  decode xml datasets/mix\xml\smoke_759.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_759.jpg
-2021-11-24 13:00:16,363 - [WARNING]:  decode xml datasets/mix\xml\smoke_797.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,399 - [WARNING]:  decode xml datasets/mix\xml\smoke_83.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,416 - [WARNING]:  decode xml datasets/mix\xml\smoke_844.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,463 - [WARNING]:  decode xml datasets/mix\xml\smoke_878.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_878.jpg
-2021-11-24 13:00:16,471 - [WARNING]:  decode xml datasets/mix\xml\smoke_886.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,483 - [WARNING]:  decode xml datasets/mix\xml\smoke_895.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
-2021-11-24 13:00:16,502 - [INFO]:  load datasets complete, check pass, images num:2033, bboxes num:3180
-2021-11-24 13:00:23,237 - [INFO]:  train, labels:['fire', 'smoke']
-2021-11-24 13:00:23,238 - [DEBUG]:  train, datasets dir:datasets/mix
-2021-11-24 13:00:23,273 - [INFO]:  bboxes num: 3180, first bbox: [0.99553571 0.44196429]
-2021-11-24 13:00:23,986 - [INFO]:  bbox accuracy(IOU): 63.65%
-2021-11-24 13:00:23,986 - [INFO]:  bound boxes: (15.000000,21.00),(171.000000,132.00),(72.000000,103.00),(44.000000,49.00),(131.000000,65.00)
-2021-11-24 13:00:23,987 - [INFO]:  anchors: [0.46875, 0.65625, 5.34375, 4.125, 2.25, 3.21875, 1.375, 1.53125, 4.09375, 2.03125]
-2021-11-24 13:00:23,987 - [INFO]:  w/h ratios: [0.7, 0.71, 0.9, 1.3, 2.02]
-2021-11-24 13:00:26,996 - [INFO]:  train start
-2021-11-24 13:00:26,997 - [INFO]:  progress: 1.0%, train start
-2021-11-24 13:00:27,940 - [INFO]:  epoch 0 start
-2021-11-24 13:10:16,675 - [INFO]:  epoch 0 end: {'loss': 0.6220558881759644, 'val_loss': 0.7819682359695435, 'lr': 1e-04}
-2021-11-24 13:10:16,676 - [INFO]:  progress: 3.425%, train epoch end
-2021-11-24 13:10:16,994 - [INFO]:  epoch 1 start
-2021-11-24 13:20:10,404 - [INFO]:  epoch 1 end: {'loss': 0.31065571308135986, 'val_loss': 0.7265393733978271, 'lr': 1e-04}
-2021-11-24 13:20:10,404 - [INFO]:  progress: 5.85%, train epoch end
-2021-11-24 13:20:10,637 - [INFO]:  epoch 2 start
-2021-11-24 13:30:29,552 - [INFO]:  epoch 2 end: {'loss': 0.2314116656780243, 'val_loss': 0.6916313171386719, 'lr': 1e-04}
-2021-11-24 13:30:29,553 - [INFO]:  progress: 8.274999999999999%, train epoch end
-2021-11-24 13:30:29,774 - [INFO]:  epoch 3 start
-2021-11-24 13:40:23,789 - [INFO]:  epoch 3 end: {'loss': 0.20037151873111725, 'val_loss': 0.7016077041625977, 'lr': 1e-04}
-2021-11-24 13:40:23,791 - [INFO]:  progress: 10.7%, train epoch end
-2021-11-24 13:40:23,820 - [INFO]:  epoch 4 start
-2021-11-24 13:50:09,233 - [INFO]:  epoch 4 end: {'loss': 0.16754285991191864, 'val_loss': 0.6773096919059753, 'lr': 1e-04}
-2021-11-24 13:50:09,234 - [INFO]:  progress: 13.125%, train epoch end
-2021-11-24 13:50:09,461 - [INFO]:  epoch 5 start
-2021-11-24 13:59:55,502 - [INFO]:  epoch 5 end: {'loss': 0.14894211292266846, 'val_loss': 0.6197271943092346, 'lr': 1e-04}
-2021-11-24 13:59:55,502 - [INFO]:  progress: 15.549999999999999%, train epoch end
-2021-11-24 13:59:55,733 - [INFO]:  epoch 6 start
-2021-11-24 14:09:37,810 - [INFO]:  epoch 6 end: {'loss': 0.12773634493350983, 'val_loss': 0.6177793145179749, 'lr': 1e-04}
-2021-11-24 14:09:37,810 - [INFO]:  progress: 17.974999999999998%, train epoch end
-2021-11-24 14:09:38,045 - [INFO]:  epoch 7 start
-2021-11-24 14:20:03,769 - [INFO]:  epoch 7 end: {'loss': 0.12110132724046707, 'val_loss': 0.6718698143959045, 'lr': 1e-04}
-2021-11-24 14:20:03,770 - [INFO]:  progress: 20.4%, train epoch end
-2021-11-24 14:20:03,825 - [INFO]:  epoch 8 start
-2021-11-24 14:30:26,584 - [INFO]:  epoch 8 end: {'loss': 0.10528524965047836, 'val_loss': 0.6453378796577454, 'lr': 1e-04}
-2021-11-24 14:30:26,585 - [INFO]:  progress: 22.825%, train epoch end
-2021-11-24 14:30:26,641 - [INFO]:  epoch 9 start
-2021-11-24 14:40:11,244 - [INFO]:  epoch 9 end: {'loss': 0.1022079735994339, 'val_loss': 0.6305220723152161, 'lr': 1e-04}
-2021-11-24 14:40:11,246 - [INFO]:  progress: 25.25%, train epoch end
-2021-11-24 14:40:11,318 - [INFO]:  epoch 10 start
-2021-11-24 14:50:06,570 - [INFO]:  epoch 10 end: {'loss': 0.09378112852573395, 'val_loss': 0.6474791765213013, 'lr': 1e-04}
-2021-11-24 14:50:06,570 - [INFO]:  progress: 27.675000000000004%, train epoch end
-2021-11-24 14:50:06,604 - [INFO]:  epoch 11 start
-2021-11-24 15:00:16,397 - [INFO]:  epoch 11 end: {'loss': 0.08863712847232819, 'val_loss': 0.6372966170310974, 'lr': 1e-04}
-2021-11-24 15:00:16,397 - [INFO]:  progress: 30.099999999999998%, train epoch end
-2021-11-24 15:00:16,432 - [INFO]:  epoch 12 start
-2021-11-24 15:10:33,262 - [INFO]:  epoch 12 end: {'loss': 0.05866166204214096, 'val_loss': 0.6405811309814453, 'lr': 2e-05}
-2021-11-24 15:10:33,264 - [INFO]:  progress: 32.525%, train epoch end
-2021-11-24 15:10:33,346 - [INFO]:  epoch 13 start
-2021-11-24 15:20:10,522 - [INFO]:  epoch 13 end: {'loss': 0.05414154380559921, 'val_loss': 0.6433768272399902, 'lr': 2e-05}
-2021-11-24 15:20:10,522 - [INFO]:  progress: 34.949999999999996%, train epoch end
-2021-11-24 15:20:10,557 - [INFO]:  epoch 14 start
-2021-11-24 15:30:04,872 - [INFO]:  epoch 14 end: {'loss': 0.05429736152291298, 'val_loss': 0.6573227643966675, 'lr': 2e-05}
-2021-11-24 15:30:04,874 - [INFO]:  progress: 37.375%, train epoch end
-2021-11-24 15:30:04,967 - [INFO]:  epoch 15 start
-2021-11-24 15:39:46,510 - [INFO]:  epoch 15 end: {'loss': 0.05129806697368622, 'val_loss': 0.6572504639625549, 'lr': 2e-05}
-2021-11-24 15:39:46,511 - [INFO]:  progress: 39.8%, train epoch end
-2021-11-24 15:39:46,592 - [INFO]:  epoch 16 start
-2021-11-24 15:50:01,354 - [INFO]:  epoch 16 end: {'loss': 0.04899363964796066, 'val_loss': 0.6664197444915771, 'lr': 2e-05}
-2021-11-24 15:50:01,355 - [INFO]:  progress: 42.225%, train epoch end
-2021-11-24 15:50:01,406 - [INFO]:  epoch 17 start
-2021-11-24 16:00:07,611 - [INFO]:  epoch 17 end: {'loss': 0.04541622847318649, 'val_loss': 0.655502200126648, 'lr': 1e-05}
-2021-11-24 16:00:07,612 - [INFO]:  progress: 44.65%, train epoch end
-2021-11-24 16:00:07,637 - [INFO]:  epoch 18 start
-2021-11-24 16:09:53,741 - [INFO]:  epoch 18 end: {'loss': 0.0423121303319931, 'val_loss': 0.6500681042671204, 'lr': 1e-05}
-2021-11-24 16:09:53,743 - [INFO]:  progress: 47.074999999999996%, train epoch end
-2021-11-24 16:09:53,813 - [INFO]:  epoch 19 start
-2021-11-24 16:19:59,770 - [INFO]:  epoch 19 end: {'loss': 0.04404688626527786, 'val_loss': 0.6663901805877686, 'lr': 1e-05}
-2021-11-24 16:19:59,771 - [INFO]:  progress: 49.5%, train epoch end
-2021-11-24 16:19:59,801 - [INFO]:  epoch 20 start
-2021-11-24 16:30:12,735 - [INFO]:  epoch 20 end: {'loss': 0.04300418496131897, 'val_loss': 0.6792407631874084, 'lr': 1e-05}
-2021-11-24 16:30:12,735 - [INFO]:  progress: 51.925%, train epoch end
-2021-11-24 16:30:12,803 - [INFO]:  epoch 21 start
-2021-11-24 16:39:59,282 - [INFO]:  epoch 21 end: {'loss': 0.04636986181139946, 'val_loss': 0.6533510684967041, 'lr': 1e-05}
-2021-11-24 16:39:59,283 - [INFO]:  progress: 54.35000000000001%, train epoch end
-2021-11-24 16:39:59,321 - [INFO]:  epoch 22 start
-2021-11-24 16:50:35,130 - [INFO]:  epoch 22 end: {'loss': 0.046414729207754135, 'val_loss': 0.6559804677963257, 'lr': 1e-05}
-2021-11-24 16:50:35,131 - [INFO]:  progress: 56.77499999999999%, train epoch end
-2021-11-24 16:50:35,205 - [INFO]:  epoch 23 start
-2021-11-24 17:00:24,475 - [INFO]:  epoch 23 end: {'loss': 0.042045317590236664, 'val_loss': 0.6527373790740967, 'lr': 1e-05}
-2021-11-24 17:00:24,476 - [INFO]:  progress: 59.199999999999996%, train epoch end
-2021-11-24 17:00:24,546 - [INFO]:  epoch 24 start
-2021-11-24 17:10:02,195 - [INFO]:  epoch 24 end: {'loss': 0.04148777201771736, 'val_loss': 0.6739626526832581, 'lr': 1e-05}
-2021-11-24 17:10:02,197 - [INFO]:  progress: 61.625%, train epoch end
-2021-11-24 17:10:02,232 - [INFO]:  epoch 25 start
-2021-11-24 17:19:38,856 - [INFO]:  epoch 25 end: {'loss': 0.03875016048550606, 'val_loss': 0.6624456644058228, 'lr': 1e-05}
-2021-11-24 17:19:38,857 - [INFO]:  progress: 64.05%, train epoch end
-2021-11-24 17:19:38,920 - [INFO]:  epoch 26 start
-2021-11-24 17:29:26,953 - [INFO]:  epoch 26 end: {'loss': 0.04202263057231903, 'val_loss': 0.6518791913986206, 'lr': 1e-05}
-2021-11-24 17:29:26,955 - [INFO]:  progress: 66.475%, train epoch end
-2021-11-24 17:29:26,961 - [INFO]:  train end
-2021-11-24 17:29:26,961 - [INFO]:  progress: 98.0%, train end
-2021-11-24 17:30:02,271 - [INFO]:  train ok, now generate report
-2021-11-24 17:30:02,271 - [INFO]:  generate report image
-2021-11-24 17:30:03,098 - [INFO]:  generate report image end
-2021-11-24 17:30:03,099 - [INFO]:  now generate kmodel
-2021-11-24 17:30:37,095 - [INFO]:  copy template files
-2021-11-24 17:30:37,253 - [ERROR]:  failed: TrainFailReason.ERROR_INTERNAL, node error:'charmap' codec can't encode characters in position 243-247: character maps to <undefined>
+2021-11-30 16:53:30,932 - [INFO]:  progress: 0%, start
+2021-11-30 16:53:30,932 - [INFO]:  progress: 1%, start train
+2021-11-30 16:53:30,933 - [INFO]:  no GPU, will use [CPU]
+2021-11-30 16:53:35,889 - [INFO]:  input_shape: (224, 224, 3)
+2021-11-30 16:53:41,037 - [WARNING]:  decode xml datasets/mix\xml\smoke_109.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,058 - [WARNING]:  decode xml datasets/mix\xml\smoke_119.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_119.jpg
+2021-11-30 16:53:41,221 - [WARNING]:  decode xml datasets/mix\xml\smoke_191.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,247 - [WARNING]:  decode xml datasets/mix\xml\smoke_202.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,315 - [WARNING]:  decode xml datasets/mix\xml\smoke_228.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_228.jpg
+2021-11-30 16:53:41,322 - [WARNING]:  decode xml datasets/mix\xml\smoke_231.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,330 - [WARNING]:  decode xml datasets/mix\xml\smoke_235.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_235.jpg
+2021-11-30 16:53:41,396 - [WARNING]:  decode xml datasets/mix\xml\smoke_258.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,408 - [WARNING]:  decode xml datasets/mix\xml\smoke_263.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,448 - [WARNING]:  decode xml datasets/mix\xml\smoke_278.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,462 - [WARNING]:  decode xml datasets/mix\xml\smoke_283.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,583 - [WARNING]:  decode xml datasets/mix\xml\smoke_333.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,630 - [WARNING]:  decode xml datasets/mix\xml\smoke_354.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,708 - [WARNING]:  decode xml datasets/mix\xml\smoke_387.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,726 - [WARNING]:  decode xml datasets/mix\xml\smoke_394.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_394.jpg
+2021-11-30 16:53:41,754 - [WARNING]:  decode xml datasets/mix\xml\smoke_404.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,826 - [WARNING]:  decode xml datasets/mix\xml\smoke_433.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,927 - [WARNING]:  decode xml datasets/mix\xml\smoke_481.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,957 - [WARNING]:  decode xml datasets/mix\xml\smoke_495.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:41,988 - [WARNING]:  decode xml datasets/mix\xml\smoke_507.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,029 - [WARNING]:  decode xml datasets/mix\xml\smoke_523.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_523.jpg
+2021-11-30 16:53:42,049 - [WARNING]:  decode xml datasets/mix\xml\smoke_532.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,098 - [WARNING]:  decode xml datasets/mix\xml\smoke_554.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,191 - [WARNING]:  decode xml datasets/mix\xml\smoke_594.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,257 - [WARNING]:  decode xml datasets/mix\xml\smoke_623.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,324 - [WARNING]:  decode xml datasets/mix\xml\smoke_650.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,386 - [WARNING]:  decode xml datasets/mix\xml\smoke_672.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,395 - [WARNING]:  decode xml datasets/mix\xml\smoke_676.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_676.jpg
+2021-11-30 16:53:42,457 - [WARNING]:  decode xml datasets/mix\xml\smoke_7.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_7.jpg
+2021-11-30 16:53:42,598 - [WARNING]:  decode xml datasets/mix\xml\smoke_759.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_759.jpg
+2021-11-30 16:53:42,682 - [WARNING]:  decode xml datasets/mix\xml\smoke_797.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,760 - [WARNING]:  decode xml datasets/mix\xml\smoke_83.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,791 - [WARNING]:  decode xml datasets/mix\xml\smoke_844.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,872 - [WARNING]:  decode xml datasets/mix\xml\smoke_878.xml, can not find iamge: C:/Users/Lenovo/Documents/Hackathon_Codegreen/Dataset/forestfire/images/smoke/smoke_878.jpg
+2021-11-30 16:53:42,888 - [WARNING]:  decode xml datasets/mix\xml\smoke_886.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,908 - [WARNING]:  decode xml datasets/mix\xml\smoke_895.xml ok, but shape (224, 224, 1) not the same as expected: (224, 224, 3)
+2021-11-30 16:53:42,946 - [INFO]:  load datasets complete, check pass, images num:3652, bboxes num:7773
+2021-11-30 16:53:44,280 - [INFO]:  train, labels:['fire', 'smoke']
+2021-11-30 16:53:44,280 - [DEBUG]:  train, datasets dir:datasets/mix
+2021-11-30 16:53:44,291 - [INFO]:  bboxes num: 7773, first bbox: [0.99553571 0.44196429]
+2021-11-30 16:53:53,444 - [INFO]:  bbox accuracy(IOU): 60.97%
+2021-11-30 16:53:53,445 - [INFO]:  bound boxes: (13.000000,16.00),(47.000000,68.00),(185.000000,126.00),(31.000000,32.00),(96.000000,90.00)
+2021-11-30 16:53:53,445 - [INFO]:  anchors: [0.40625, 0.5, 1.46875, 2.125, 5.78125, 3.9375, 0.96875, 1.0, 3.0, 2.8125]
+2021-11-30 16:53:53,448 - [INFO]:  w/h ratios: [0.69, 0.81, 0.97, 1.07, 1.47]
+2021-11-30 16:53:54,855 - [INFO]:  train start
+2021-11-30 16:53:54,855 - [INFO]:  progress: 1.0%, train start
+2021-11-30 16:53:54,918 - [INFO]:  epoch 0 start
+2021-11-30 17:29:20,239 - [INFO]:  epoch 0 end: {'loss': 0.7217271327972412, 'val_loss': 0.8397336602210999, 'lr': 1e-04}
+2021-11-30 17:29:20,239 - [INFO]:  progress: 3.425%, train epoch end
+2021-11-30 17:29:20,474 - [INFO]:  epoch 1 start
+2021-11-30 18:04:16,472 - [INFO]:  epoch 1 end: {'loss': 0.43869704008102417, 'val_loss': 0.8126748204231262, 'lr': 1e-04}
+2021-11-30 18:04:16,472 - [INFO]:  progress: 5.85%, train epoch end
+2021-11-30 18:04:16,644 - [INFO]:  epoch 2 start
+2021-11-30 18:39:01,430 - [INFO]:  epoch 2 end: {'loss': 0.3518013656139374, 'val_loss': 0.7827762365341187, 'lr': 1e-04}
+2021-11-30 18:39:01,430 - [INFO]:  progress: 8.274999999999999%, train epoch end
+2021-11-30 18:39:01,617 - [INFO]:  epoch 3 start
+2021-11-30 19:13:39,306 - [INFO]:  epoch 3 end: {'loss': 0.3112978935241699, 'val_loss': 0.8010841608047485, 'lr': 1e-04}
+2021-11-30 19:13:39,306 - [INFO]:  progress: 10.7%, train epoch end
+2021-11-30 19:13:39,353 - [INFO]:  epoch 4 start
+2021-11-30 19:48:19,172 - [INFO]:  epoch 4 end: {'loss': 0.294927179813385, 'val_loss': 0.7409888505935669, 'lr': 1e-04}
+2021-11-30 19:48:19,172 - [INFO]:  progress: 13.125%, train epoch end
+2021-11-30 19:48:19,375 - [INFO]:  epoch 5 start
+2021-11-30 20:22:50,152 - [INFO]:  epoch 5 end: {'loss': 0.2753453552722931, 'val_loss': 0.7700128555297852, 'lr': 1e-04}
+2021-11-30 20:22:50,152 - [INFO]:  progress: 15.549999999999999%, train epoch end
+2021-11-30 20:22:50,199 - [INFO]:  epoch 6 start
+2021-11-30 20:57:24,840 - [INFO]:  epoch 6 end: {'loss': 0.2531883716583252, 'val_loss': 0.7803674936294556, 'lr': 1e-04}
+2021-11-30 20:57:24,840 - [INFO]:  progress: 17.974999999999998%, train epoch end
+2021-11-30 20:57:24,872 - [INFO]:  epoch 7 start
+2021-11-30 21:32:01,762 - [INFO]:  epoch 7 end: {'loss': 0.22748251259326935, 'val_loss': 0.7541579008102417, 'lr': 1e-04}
+2021-11-30 21:32:01,762 - [INFO]:  progress: 20.4%, train epoch end
+2021-11-30 21:32:01,809 - [INFO]:  epoch 8 start
+2021-11-30 22:06:44,018 - [INFO]:  epoch 8 end: {'loss': 0.22296154499053955, 'val_loss': 0.7644809484481812, 'lr': 1e-04}
+2021-11-30 22:06:44,018 - [INFO]:  progress: 22.825%, train epoch end
+2021-11-30 22:06:44,080 - [INFO]:  epoch 9 start
+2021-11-30 22:41:23,503 - [INFO]:  epoch 9 end: {'loss': 0.22491870820522308, 'val_loss': 0.7547804117202759, 'lr': 1e-04}
+2021-11-30 22:41:23,519 - [INFO]:  progress: 25.25%, train epoch end
+2021-11-30 22:41:23,550 - [INFO]:  epoch 10 start
+2021-11-30 23:15:52,541 - [INFO]:  epoch 10 end: {'loss': 0.18561778962612152, 'val_loss': 0.7356123328208923, 'lr': 2e-05}
+2021-11-30 23:15:52,541 - [INFO]:  progress: 27.675000000000004%, train epoch end
+2021-11-30 23:15:52,729 - [INFO]:  epoch 11 start
+2021-12-01 05:02:22,865 - [INFO]:  epoch 11 end: {'loss': 0.1784103959798813, 'val_loss': 0.7389214634895325, 'lr': 2e-05}
+2021-12-01 05:02:22,865 - [INFO]:  progress: 30.099999999999998%, train epoch end
+2021-12-01 05:02:22,912 - [INFO]:  epoch 12 start
+2021-12-01 05:37:20,774 - [INFO]:  epoch 12 end: {'loss': 0.18492276966571808, 'val_loss': 0.7560209631919861, 'lr': 2e-05}
+2021-12-01 05:37:20,790 - [INFO]:  progress: 32.525%, train epoch end
+2021-12-01 05:37:20,837 - [INFO]:  epoch 13 start
+2021-12-01 06:11:44,969 - [INFO]:  epoch 13 end: {'loss': 0.16207066178321838, 'val_loss': 0.7344825267791748, 'lr': 2e-05}
+2021-12-01 06:11:44,969 - [INFO]:  progress: 34.949999999999996%, train epoch end
+2021-12-01 06:11:45,172 - [INFO]:  epoch 14 start
+2021-12-01 06:46:08,996 - [INFO]:  epoch 14 end: {'loss': 0.17767834663391113, 'val_loss': 0.7587060928344727, 'lr': 2e-05}
+2021-12-01 06:46:08,996 - [INFO]:  progress: 37.375%, train epoch end
+2021-12-01 06:46:09,028 - [INFO]:  epoch 15 start
+2021-12-01 07:20:33,175 - [INFO]:  epoch 15 end: {'loss': 0.16279484331607819, 'val_loss': 0.770937979221344, 'lr': 2e-05}
+2021-12-01 07:20:33,175 - [INFO]:  progress: 39.8%, train epoch end
+2021-12-01 07:20:33,222 - [INFO]:  epoch 16 start
+2021-12-01 07:55:14,187 - [INFO]:  epoch 16 end: {'loss': 0.16373254358768463, 'val_loss': 0.7715593576431274, 'lr': 2e-05}
+2021-12-01 07:55:14,187 - [INFO]:  progress: 42.225%, train epoch end
+2021-12-01 07:55:14,218 - [INFO]:  epoch 17 start
+2021-12-01 08:29:53,454 - [INFO]:  epoch 17 end: {'loss': 0.1720338612794876, 'val_loss': 0.7992130517959595, 'lr': 2e-05}
+2021-12-01 08:29:53,454 - [INFO]:  progress: 44.65%, train epoch end
+2021-12-01 08:29:53,485 - [INFO]:  epoch 18 start
+2021-12-01 09:04:44,571 - [INFO]:  epoch 18 end: {'loss': 0.17536315321922302, 'val_loss': 0.7946296334266663, 'lr': 2e-05}
+2021-12-01 09:04:44,571 - [INFO]:  progress: 47.074999999999996%, train epoch end
+2021-12-01 09:04:44,633 - [INFO]:  epoch 19 start
+2021-12-01 09:39:43,489 - [INFO]:  epoch 19 end: {'loss': 0.16295166313648224, 'val_loss': 0.8197874426841736, 'lr': 1e-05}
+2021-12-01 09:39:43,489 - [INFO]:  progress: 49.5%, train epoch end
+2021-12-01 09:39:43,520 - [INFO]:  epoch 20 start
+2021-12-01 10:14:09,614 - [INFO]:  epoch 20 end: {'loss': 0.1647939532995224, 'val_loss': 0.7955941557884216, 'lr': 1e-05}
+2021-12-01 10:14:09,614 - [INFO]:  progress: 51.925%, train epoch end
+2021-12-01 10:14:09,676 - [INFO]:  epoch 21 start
+2021-12-01 10:48:41,382 - [INFO]:  epoch 21 end: {'loss': 0.1658450961112976, 'val_loss': 0.812628448009491, 'lr': 1e-05}
+2021-12-01 10:48:41,382 - [INFO]:  progress: 54.35000000000001%, train epoch end
+2021-12-01 10:48:41,429 - [INFO]:  epoch 22 start
+2021-12-01 11:31:54,539 - [INFO]:  epoch 22 end: {'loss': 0.16750836372375488, 'val_loss': 0.8005686402320862, 'lr': 1e-05}
+2021-12-01 11:31:54,546 - [INFO]:  progress: 56.77499999999999%, train epoch end
+2021-12-01 11:31:54,598 - [INFO]:  epoch 23 start
+2021-12-01 12:17:30,876 - [INFO]:  epoch 23 end: {'loss': 0.1649380624294281, 'val_loss': 0.8354809284210205, 'lr': 1e-05}
+2021-12-01 12:17:30,877 - [INFO]:  progress: 59.199999999999996%, train epoch end
+2021-12-01 12:17:30,932 - [INFO]:  epoch 24 start
+2021-12-01 13:04:09,398 - [INFO]:  epoch 24 end: {'loss': 0.1640118956565857, 'val_loss': 0.8506897687911987, 'lr': 1e-05}
+2021-12-01 13:04:09,402 - [INFO]:  progress: 61.625%, train epoch end
+2021-12-01 13:04:09,448 - [INFO]:  epoch 25 start
+2021-12-01 13:40:36,355 - [INFO]:  epoch 25 end: {'loss': 0.158455491065979, 'val_loss': 0.8295277953147888, 'lr': 1e-05}
+2021-12-01 13:40:36,355 - [INFO]:  progress: 64.05%, train epoch end
+2021-12-01 13:40:36,402 - [INFO]:  epoch 26 start
+2021-12-01 14:15:10,742 - [INFO]:  epoch 26 end: {'loss': 0.15307152271270752, 'val_loss': 0.8310314416885376, 'lr': 1e-05}
+2021-12-01 14:15:10,742 - [INFO]:  progress: 66.475%, train epoch end
+2021-12-01 14:15:10,773 - [INFO]:  epoch 27 start
+2021-12-01 14:50:11,295 - [INFO]:  epoch 27 end: {'loss': 0.1645042449235916, 'val_loss': 0.8209191560745239, 'lr': 1e-05}
+2021-12-01 14:50:11,295 - [INFO]:  progress: 68.89999999999999%, train epoch end
+2021-12-01 14:50:11,341 - [INFO]:  epoch 28 start
+2021-12-01 15:24:45,963 - [INFO]:  epoch 28 end: {'loss': 0.15670743584632874, 'val_loss': 0.8209836483001709, 'lr': 1e-05}
+2021-12-01 15:24:45,963 - [INFO]:  progress: 71.325%, train epoch end
+2021-12-01 15:24:45,994 - [INFO]:  epoch 29 start
+2021-12-01 15:59:47,076 - [INFO]:  epoch 29 end: {'loss': 0.15277649462223053, 'val_loss': 0.8266218900680542, 'lr': 1e-05}
+2021-12-01 15:59:47,076 - [INFO]:  progress: 73.75%, train epoch end
+2021-12-01 15:59:47,107 - [INFO]:  epoch 30 start
+2021-12-01 16:34:34,726 - [INFO]:  epoch 30 end: {'loss': 0.15772227942943573, 'val_loss': 0.8432368040084839, 'lr': 1e-05}
+2021-12-01 16:34:34,726 - [INFO]:  progress: 76.175%, train epoch end
+2021-12-01 16:34:34,757 - [INFO]:  epoch 31 start
+2021-12-01 17:09:13,530 - [INFO]:  epoch 31 end: {'loss': 0.1691451072692871, 'val_loss': 0.8472623825073242, 'lr': 1e-05}
+2021-12-01 17:09:13,530 - [INFO]:  progress: 78.6%, train epoch end
+2021-12-01 17:09:13,576 - [INFO]:  epoch 32 start
+2021-12-01 17:43:55,374 - [INFO]:  epoch 32 end: {'loss': 0.15303736925125122, 'val_loss': 0.8422157764434814, 'lr': 1e-05}
+2021-12-01 17:43:55,374 - [INFO]:  progress: 81.02499999999999%, train epoch end
+2021-12-01 17:43:55,421 - [INFO]:  epoch 33 start
+2021-12-01 18:18:28,651 - [INFO]:  epoch 33 end: {'loss': 0.1549989879131317, 'val_loss': 0.8393268585205078, 'lr': 1e-05}
+2021-12-01 18:18:28,651 - [INFO]:  progress: 83.45%, train epoch end
+2021-12-01 18:18:28,651 - [INFO]:  train end
+2021-12-01 18:18:28,651 - [INFO]:  progress: 98.0%, train end
+2021-12-01 18:19:00,775 - [INFO]:  train ok, now generate report
+2021-12-01 18:19:00,775 - [INFO]:  generate report image
+2021-12-01 18:19:01,056 - [INFO]:  generate report image end
+2021-12-01 18:19:01,056 - [INFO]:  now generate kmodel
+2021-12-01 18:19:46,055 - [INFO]:  copy template files
+2021-12-01 18:19:46,071 - [ERROR]:  failed: TrainFailReason.ERROR_INTERNAL, node error:'charmap' codec can't encode characters in position 243-247: character maps to <undefined>

@@ -16,7 +16,7 @@ classifier_train_epochs = 40
 classifier_train_batch_size = 5
 classifier_train_max_classes_num = 15
 classifier_train_one_class_min_img_num = 40            # 一个类别中至少需要的样本数量
-classifier_train_one_class_max_img_num = 2500          # 一个类别中最多需要的样本数量
+classifier_train_one_class_max_img_num = 5000          # 一个类别中最多需要的样本数量
 classifier_result_file_name_prefix = "maixhub_classifier_result"
 
 # detector
@@ -26,7 +26,7 @@ detector_train_batch_size = 5
 detector_train_learn_rate = 1e-4
 detector_train_max_classes_num = 15         # 最多能训练多少类
 detector_train_one_class_min_img_num = 100            # 一个类别中至少需要的样本数量
-detector_train_one_class_max_img_num = 2500           # 一个类别中最多需要的样本数量
+detector_train_one_class_max_img_num = 5000          # 一个类别中最多需要的样本数量
 detector_result_file_name_prefix = "maixhub_detector_result"
 
 
