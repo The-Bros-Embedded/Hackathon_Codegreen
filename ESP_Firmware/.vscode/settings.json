@@ -5,6 +5,10 @@
     "wifi_app.h": "c",
     "freertos.h": "c",
     "mqtt_app.h": "c",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "array": "c",
+    "string_view": "c",
+    "initializer_list": "c",
+    "utility": "c"
   }
 }

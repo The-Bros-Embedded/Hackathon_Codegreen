@@ -27,4 +27,7 @@ void uart0_init(int baud, uart_word_length_t databit, uart_hw_flowcontrol_t flow
 		uart_stop_bits_t stopbits, uart_sclk_t clk_source);
 void uart0_write(char* data, int len);
 
+uint8_t data_stat;
+int data_len;
+
 #endif

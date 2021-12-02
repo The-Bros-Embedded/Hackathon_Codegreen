@@ -33,6 +33,10 @@ void uart0_event_task(void *pvParameters)
 				case UART_DATA:
 					uart_read_bytes(UART_NUM_0, uart0_evt_buff, u0_event.size, portMAX_DELAY);
 					//uart_write_bytes(UART_NUM_0, (const char*) uart0_evt_buff, u0_event.size);
+					data_len = u0_event.size;
+					if (uart0_evt_buff[data_len-1] == '\n'){
+						data_stat = 1;
+					}
 					break;
 
 				default:
@@ -46,6 +50,7 @@ void uart0_event_task(void *pvParameters)
 void uart0_init(int baud, uart_word_length_t databit, uart_hw_flowcontrol_t flowctrl, uart_parity_t parity,
 		uart_stop_bits_t stopbits, uart_sclk_t clk_source)
 {
+	data_stat = 0;
 	// change uart properties
 	uart_config.baud_rate = baud;
 	uart_config.data_bits = databit;

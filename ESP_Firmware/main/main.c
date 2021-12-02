@@ -17,8 +17,8 @@
 #include "uart_app.h"
 
 // APPS
-#define SSID    "kotamas_asri 1"
-#define PASS    "dadank89"
+uint8_t SSID[] = "kotamas_asri 1";
+uint8_t PASS[] = "dadank89";
 
 void initialize(void);
 void routine(void *arg);
@@ -38,20 +38,32 @@ void app_main(void)
 void initialize(void)
 {
     // uart init
-    uart0_init(115200,UART_DATA_8_BITS,UART_HW_FLOWCTRL_DISABLE,UART_PARITY_DISABLE,UART_STOP_BITS_1,UART_SCLK_APB)
+    uart0_init(115200,UART_DATA_8_BITS,UART_HW_FLOWCTRL_DISABLE,UART_PARITY_DISABLE,UART_STOP_BITS_1,UART_SCLK_APB);
     // init wifi
     wifi_init_sta(SSID,PASS,3);
     // mqtt init
-    mqtt_init("192.168.1.5",8333,"pi","raspberry")
-    
-
+    mqtt_init("192.168.1.5",1833,"pi","raspberry");
+    mqtt_subscribe("sub_topic");
 }
 
 void routine(void *arg)
 {
     while (1)
     {
+        uint8_t data_buffer[1024];
+        bzero(data_buffer,1024);
+        
         vTaskDelay(pdMS_TO_TICKS(1000));
+        if (data_stat == 1){
+            data_stat = 0;
+            // send uart buffer via wifi-mqtt to server
+            for (int i=0;i<data_len-1;i++){
+                //copy data buffer
+                data_buffer[i] = uart0_evt_buff[i];
+                // publish uart data
+                mqtt_publish("pub_topic",(char *)data_buffer);
+            }
+        }
     }
     
 }
