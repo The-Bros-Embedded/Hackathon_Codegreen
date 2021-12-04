@@ -5,11 +5,26 @@ import sensor, image, lcd, time
 import KPU as kpu
 import gc, sys
 import uos
+from fpioa_manager import fm
+from Maix import GPIO
+from dht11 import DHT11
+import ujson
+from machine import UART
 
-#def get_sensor_data():
+fm.register(7, fm.fpioa.GPIOHS3, force=True)
+fm.register(12, fm.fpioa.UART2_TX, force=True)
+fm.register(13, fm.fpioa.UART2_RX, force=True)
 
-#def send_data():
+gpio7 = GPIO(GPIO.GPIOHS3, GPIO.OUT)
+uart_esp = UART(UART.UART2, 115200, 8, 0, 0, timeout=1000, read_buf_len=4096)
+dht = DHT11(gpio)
 
+
+def send_data(temp, hum, fire, smoke):
+    #combine all data
+    data = {"temp":temp,"hum":hum,"fire":fire,"smoke":smoke}
+    payload = ujson.dumps(data)
+    uart_esp.write(payload)
 
 def main(anchors, labels = None, model_addr="/sd/m.kmodel", sensor_window=(224, 224), lcd_rotation=0, sensor_hmirror=False, sensor_vflip=False):
     sensor.reset()
@@ -24,6 +39,9 @@ def main(anchors, labels = None, model_addr="/sd/m.kmodel", sensor_window=(224, 
     lcd.rotation(lcd_rotation)
     lcd.clear(lcd.WHITE)
 
+    fire_val = 0
+    smoke_val = 0
+
     if not labels:
         with open('labels.txt','r') as f:
             exec(f.read())
@@ -35,17 +53,27 @@ def main(anchors, labels = None, model_addr="/sd/m.kmodel", sensor_window=(224, 
         while 1:
             img = sensor.snapshot()
             print("read image")
-            lcd.display(img)
-            #img = img.resize(224,224)
-            #img.pix_to_ai()
+            #lcd.display(img)
             objects = kpu.run_yolo2(task, img)
             if objects:
                 for obj in objects:
                     pos = obj.rect()
                     img.draw_rectangle(pos)
                     img.draw_string(pos[0], pos[1], "%s : %.2f" %(labels[obj.classid()], obj.value()), scale=1, color=(255, 0, 0))
+                    if labels[obj.classid() == "fire":
+                        fire_val = obj.value()
+                    elif labels[obj.classid() == "smoke":
+                        smoke_val = obj.value()
+                    else:
+                        fire_val = 0
+                        smoke_val = 0
+            #get data
+            sensordht = dht.read()
+            tempr = sensordht.temperature
+            humid = sensordht.humidity
+            send_data(tempr,humid,fire_val,smoke_val)
             #img.draw_string(0, 200, img, scale=1, color=(255, 0, 0))
-            lcd.display(img)
+            #lcd.display(img)
             time.sleep(1)
     except Exception as e:
         raise e
