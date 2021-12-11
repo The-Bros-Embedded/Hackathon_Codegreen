@@ -7,30 +7,28 @@ import gc, sys
 import uos
 from fpioa_manager import fm
 from Maix import GPIO
-from dht11 import DHT11
 import ujson
 from machine import UART
 
-fm.register(7, fm.fpioa.GPIOHS3, force=True)
-fm.register(6, fm.fpioa.GPIO6, force=True)
-#fm.register(5, fm.fpioa.UART1_TX, force=True)
-#fm.register(4, fm.fpioa.UART1_RX, force=True)
-
-gpio7 = GPIO(GPIO.GPIOHS3, GPIO.OUT)
-sw_esp = GPIO(GPIO.GPIO6, GPIO.OUT)
-#uart_esp = UART(UART.UART1, 115200, 8, 0, 0, timeout=1000, read_buf_len=4096)
-dht = DHT11(gpio7)
+#fm.register(6, fm.fpioa.GPIO6, force=True)
+fm.register(25, fm.fpioa.UART2_TX, force=True)
+fm.register(24, fm.fpioa.UART2_RX, force=True)
+#sw_esp = GPIO(GPIO.GPIO6, GPIO.OUT)
+uart_esp = UART(UART.UART2, 115200, 8, 0, 0, timeout=1000, read_buf_len=4096)
 
 
-def send_data(temp, hum, fire, smoke):
+def send_data(fire, smoke):
     #switch on wifi and wait to connect
-    sw_esp.value(1)
+    #sw_esp.value(1)
     time.sleep(5)
     #combine all data
-    data = {"temp":temp,"hum":hum,"fire":fire,"smoke":smoke}
+    data = {"fire":fire}
     payload = ujson.dumps(data)
-    print(payload)
-    #uart_esp.write(payload)
+    uart_esp.write(payload)
+    time.sleep(1)
+    data = {"smoke":smoke}
+    payload = ujson.dumps(data)
+    uart_esp.write(payload)
     #turn off wifi
     #time.sleep(2)
     #sw_esp.value(0)
@@ -86,15 +84,7 @@ def main(anchors, labels = None, model_addr="/sd/m.kmodel", sensor_window=(224, 
                         if smoke_val_tmp > smoke_val:
                             smoke_val = smoke_val_tmp
 
-
-            #get data
-            sensordht = dht.read()
-            #tempr = 10
-            #humid = 20
-            tempr = sensordht.temperature
-            humid = sensordht.humidity
-            send_data(tempr,humid,fire_val,smoke_val)
-            #img.draw_string(0, 200, img, scale=1, color=(255, 0, 0))
+            send_data(fire_val,smoke_val)
             #lcd.display(img)
             time.sleep(2)
     except Exception as e:

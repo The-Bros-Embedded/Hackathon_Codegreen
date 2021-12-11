@@ -30,6 +30,7 @@
 esp_mqtt_client_handle_t client;
 static const char *TAG = "MQTT";
 int msg_id;
+char mqtt_serv[] = "192.168.1.7";
 
 static esp_err_t mqtt_event_handler_cb(esp_mqtt_event_handle_t event)
 {
@@ -37,9 +38,9 @@ static esp_err_t mqtt_event_handler_cb(esp_mqtt_event_handle_t event)
     // your_context_t *context = event->context;
     switch (event->event_id) {
         case MQTT_EVENT_CONNECTED:
-		/*
+		
             ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
-            msg_id = esp_mqtt_client_publish(client, mqtt_online_topic, "Device restarted", 0, 1, 0);
+        /*    msg_id = esp_mqtt_client_publish(client, mqtt_online_topic, "Device restarted", 0, 1, 0);
             ESP_LOGI(TAG, "publish successful, msg_id=%d", msg_id);
 
             msg_id = esp_mqtt_client_subscribe(client, mqtt_subscribe_topic, 0);
@@ -102,7 +103,7 @@ void mqtt_init(const char* mqtt_server, int mqtt_port, const char* username, con
     ESP_LOGI(TAG, "[APP] Startup..");
     ESP_LOGI(TAG, "[APP] Free memory: %d bytes", esp_get_free_heap_size());
     ESP_LOGI(TAG, "[APP] IDF version: %s", esp_get_idf_version());
-
+    
     esp_log_level_set("*", ESP_LOG_INFO);
     esp_log_level_set("MQTT_CLIENT", ESP_LOG_VERBOSE);
     esp_log_level_set("MQTT_EXAMPLE", ESP_LOG_VERBOSE);
@@ -111,9 +112,11 @@ void mqtt_init(const char* mqtt_server, int mqtt_port, const char* username, con
     esp_log_level_set("TRANSPORT", ESP_LOG_VERBOSE);
     esp_log_level_set("OUTBOX", ESP_LOG_VERBOSE);
 
+    printf("init mqtt flash & netif\r\n");
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_netif_init());
     //ESP_ERROR_CHECK(esp_event_loop_create_default());
+    printf("init mqtt\r\n");
 
     esp_mqtt_client_config_t mqtt_cfg = {
     		.uri = mqtt_server,
@@ -122,7 +125,7 @@ void mqtt_init(const char* mqtt_server, int mqtt_port, const char* username, con
     		.password = pass
     };
 
-    printf("LW_topic: %s\r\n",mqtt_cfg.lwt_topic);
+    //printf("LW_topic: %s\r\n",mqtt_cfg.lwt_topic);
 
     esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
     esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, client);

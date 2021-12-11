@@ -42,7 +42,6 @@ int mqtt_publish_iotera(char* payload);
 int mqtt_subscribe(const char* topic);
 int mqtt_conn_stat(void);
 void mqtt_data_handling(esp_mqtt_event_handle_t event);
-void generate_topic(const char* username);
 // payload
 char sub_msg[16];
 

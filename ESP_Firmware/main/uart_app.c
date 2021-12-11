@@ -34,7 +34,7 @@ void uart0_event_task(void *pvParameters)
 					uart_read_bytes(UART_NUM_0, uart0_evt_buff, u0_event.size, portMAX_DELAY);
 					//uart_write_bytes(UART_NUM_0, (const char*) uart0_evt_buff, u0_event.size);
 					data_len = u0_event.size;
-					if (uart0_evt_buff[data_len-1] == '\n'){
+					if (uart0_evt_buff[data_len-1] == '}'){
 						data_stat = 1;
 					}
 					break;

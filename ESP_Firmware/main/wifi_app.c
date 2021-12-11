@@ -24,10 +24,11 @@
 
 #include "wifi_app.h"
 
-#define EXAMPLE_ESP_MAXIMUM_RETRY  100
+#define WIFI_SSID      "Kota mas asri 1"
+#define WIFI_PASS      "dadank89"
+#define EXAMPLE_ESP_MAXIMUM_RETRY  10
 
 static EventGroupHandle_t s_wifi_event_group;
-
 #define WIFI_CONNECTED_BIT 0x00000001
 #define WIFI_FAIL_BIT      0x00000002
 
@@ -69,6 +70,20 @@ static void event_handler(void* arg, esp_event_base_t event_base, int32_t event_
 
 void wifi_init_sta(uint8_t* ssid, uint8_t* pass, wifi_auth_mode_t auth_mode)
 {
+    s_wifi_event_group = xEventGroupCreate();
+
+    ESP_ERROR_CHECK(esp_netif_init());
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
+    esp_netif_create_default_wifi_sta();
+
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+
+    esp_event_handler_instance_t instance_any_id;
+    esp_event_handler_instance_t instance_got_ip;
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &event_handler, NULL, &instance_any_id));
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &event_handler, NULL, &instance_got_ip));
+/*
     wifi_config_t wifi_config;
 
     for (int i=0;i<sizeof(wifi_config.sta.ssid);i++){
@@ -84,21 +99,8 @@ void wifi_init_sta(uint8_t* ssid, uint8_t* pass, wifi_auth_mode_t auth_mode)
     wifi_config.sta.threshold.authmode = auth_mode;
     wifi_config.sta.pmf_cfg.capable = true;
     wifi_config.sta.pmf_cfg.required = false;
+    */
 
-    s_wifi_event_group = xEventGroupCreate();
-
-    ESP_ERROR_CHECK(esp_netif_init());
-    ESP_ERROR_CHECK(esp_event_loop_create_default());
-    esp_netif_create_default_wifi_sta();
-
-    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
-    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
-
-    esp_event_handler_instance_t instance_any_id;
-    esp_event_handler_instance_t instance_got_ip;
-    ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &event_handler, NULL, &instance_any_id));
-    ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &event_handler, NULL, &instance_got_ip));
-/*
     wifi_config_t wifi_config = {
         .sta = {
             .ssid = WIFI_SSID,
@@ -111,7 +113,7 @@ void wifi_init_sta(uint8_t* ssid, uint8_t* pass, wifi_auth_mode_t auth_mode)
             },
         },
     };
-*/
+
 
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
